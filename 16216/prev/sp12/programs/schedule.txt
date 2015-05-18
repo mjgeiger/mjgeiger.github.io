@@ -1,0 +1,64 @@
+1
+Blue Valentine
+R
+120
+1:35
+4:40
+7:25
+10:00
+2
+The Company Men
+R
+113
+1:45
+4:30
+6:55
+9:30
+3
+The Eagle
+PG-13
+114
+1:25
+4:15
+7:10
+9:50
+4
+Gnomeo and Juliet 3D
+G
+84
+1:50
+3:55
+6:50
+9:00
+5
+The Green Hornet 3D
+PG-13
+108
+2:25
+5:10
+7:50
+10:30
+6
+Just Go With It
+PG-13
+116
+1:20
+4:10
+7:05
+9:50
+7
+The King's Speech
+R
+111
+1:40
+4:20
+7:15
+9:55
+8
+No Strings Attached
+R
+108
+1:05
+3:50
+7:00
+9:20

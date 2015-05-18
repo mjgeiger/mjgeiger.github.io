@@ -1,0 +1,21 @@
+           R (ohms)    V (volts)
+RV pair  0:   55.00     -5.00
+RV pair  1:  999.30      2.00
+RV pair  2: 1000.00     20.00
+RV pair  3:  500.25     13.00
+RV pair  4:    1.10     17.77
+RV pair  5: 1100.00    -93.50
+RV pair  6:   17.00     81.77
+RV pair  7:   34.12     19.78
+RV pair  8:   59.67    -33.00
+RV pair  9:    0.13    -92.00
+RV pair 10:   77.00     91.00
+RV pair 11: 2400.00     18.00
+RV pair 12:   16.00     17.00
+RV pair 13:  317.00     15.00
+RV pair 14:  411.00     33.00
+
+      Voltage     Current     Power
+MIN    -93.50   -736.0000     0.0040
+MAX     91.00     16.1545 67712.0000
+AVG      6.99    -47.5172  4570.6896

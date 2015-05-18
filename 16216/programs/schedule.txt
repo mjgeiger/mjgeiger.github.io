@@ -1,0 +1,80 @@
+1
+Oblivion
+PG-13
+125
+12:00
+3:00
+6:00
+9:00
+2
+42
+PG-13
+128
+12:10
+3:10
+6:10
+9:10
+3
+The Croods
+PG
+91
+12:10
+2:30
+5:00
+7:30
+4
+Evil Dead (2013)
+R
+91
+2:20
+4:40
+6:55
+9:15
+5
+Oz The Great and Powerful 3D
+PG
+130
+12:15
+3:15
+6:15
+9:15
+6
+Scary Movie V
+PG-13
+85
+2:10
+4:20
+6:30
+8:50
+7
+Olympus Has Fallen
+R
+120
+12:20
+3:10
+5:50
+8:40
+8
+G.I. Joe: Retaliation 3D
+PG-13
+99
+12:30
+3:05
+5:40
+8:15
+9
+Jurassic Park 3D
+PG-13
+126
+12:05
+2:55
+6:05
+9:05
+10
+The Place Beyond the Pines
+R
+140
+12:30
+3:30
+6:30
+9:40

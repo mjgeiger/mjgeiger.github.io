@@ -1,0 +1,28 @@
+INSTRUCTION 0: 0x1d484800
+R10 = R8 & R9
+   = 8 & 9 = 8
+
+INSTRUCTION 1: 0x050a4800
+R8 = R10 + R9
+   = 8 + 9 = 17
+
+INSTRUCTION 2: 0x088a4000
+R4 = R10 - R8
+   = 8 - 17 = -9
+
+INSTRUCTION 3: 0x11292000
+R9 = R9 / R4
+   = 9 / -9 = -1
+
+INSTRUCTION 4: 0x04851000
+R4 = R5 + R2
+   = 5 + 2 = 7
+
+INSTRUCTION 5: 0x18480040
+R2 = R8 >> 1
+   = 17 >> 1 = 8
+
+INSTRUCTION 6: 0x09441000
+R10 = R4 - R2
+   = 7 - 8 = -1
+

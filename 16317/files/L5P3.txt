@@ -1,0 +1,82 @@
+Microsoft (R) Macro Assembler Version 6.11		    06/28/99 10:13:35
+LAB 5 PART 3						     Page 1 - 1
+
+
+
+
+				TITLE   LAB 5 PART 3
+
+					PAGE     ,132
+
+ 0000				STACK_SEG       SEGMENT         STACK 'STACK'
+ 0000  0040 [					DB              64 DUP(?)
+        00
+       ]
+ 0040				STACK_SEG       ENDS
+
+
+ 0000				DATA_SEG        SEGMENT         'DATA'
+ 0000 00			FACT            DB       ?
+ 0001				DATA_SEG        ENDS
+
+
+ 0000				CODE_SEG        SEGMENT         'CODE'
+ 0000				L5P3    PROC    FAR
+					ASSUME  CS:CODE_SEG, SS:STACK_SEG, DS:DATA_SEG
+
+				;To return to DEBUG program put return address on the stack
+
+ 0000  1E				PUSH    DS
+ 0001  B8 0000				MOV     AX, 0
+ 0004  50				PUSH    AX
+
+				;Following code implements Lab 5 Part 3
+
+ 0005  B8 ---- R			MOV     AX, DATA_SEG            ;Establish data segment
+ 0008  8E D8				MOV     DS, AX
+ 000A  B0 01				MOV     AL,1
+ 000C  B1 00				MOV     CL, 0
+ 000E  38 D1			NXT:    CMP     CL, DL                  ;All numbers multiplied ?
+ 0010  74 06				JE      DONE                    ;If done, exit 
+ 0012  FE C1				INC     CL                      ;If not, do next   
+ 0014  F6 E1				MUL     CL
+ 0016  EB F6				JMP     NXT
+ 0018  A2 0000 R		DONE:   MOV     FACT, AL                ;Save the result      
+				  
+ 001B  CB				RET                             ;Return to DEBUG program
+ 001C				L5P3    ENDP
+ 001C				CODE_SEG        ENDS
+
+					END     L5P3
+Microsoft (R) Macro Assembler Version 6.11		    06/28/99 10:13:35
+LAB 5 PART 3						     Symbols 2 - 1
+
+
+
+
+Segments and Groups:
+
+                N a m e                 Size     Length   Align   Combine Class
+
+CODE_SEG . . . . . . . . . . . .	16 Bit	 001C	  Para	  Private 'CODE'	
+DATA_SEG . . . . . . . . . . . .	16 Bit	 0001	  Para	  Private 'DATA'	
+STACK_SEG  . . . . . . . . . . .	16 Bit	 0040	  Para	  Stack	  'STACK'	 
+
+
+Procedures,  parameters and locals:
+
+                N a m e                 Type     Value    Attr
+
+L5P3 . . . . . . . . . . . . . .	P Far	 0000	  CODE_SEG	Length= 001C Public
+  NXT  . . . . . . . . . . . . .	L Near	 000E	  CODE_SEG	
+  DONE . . . . . . . . . . . . .	L Near	 0018	  CODE_SEG	
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+FACT . . . . . . . . . . . . . .	Byte	 0000	  DATA_SEG	
+
+	   0 Warnings
+	   0 Errors
