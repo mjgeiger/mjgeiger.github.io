@@ -642,9 +642,9 @@
       <Withdrawn>false</Withdrawn>
     </Student>
     <Student>
-      <userName>RPhaneuf.</userName>
+      <userName>RPhaneuf</userName>
       <fName>Randall Scott</fName>
-      <lName>Phaneuf.</lName>
+      <lName>Phaneuf</lName>
       <LabSection>Tuesday</LabSection>
       <enrolled>true</enrolled>
       <Withdrawn>false</Withdrawn>
