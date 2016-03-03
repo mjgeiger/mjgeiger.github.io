@@ -7,6 +7,7 @@
  ***********************************************/
 
 #include <stdio.h>
+#include <math.h>
 #include "prog5_functions.h"
 
 // Calculate integral of f(x) over interval min to max, using n trapezoids

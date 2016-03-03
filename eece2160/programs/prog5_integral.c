@@ -7,7 +7,6 @@
 ***********************************************/
 
 #include <stdio.h>
-#include <math.h>
 #include "prog5_functions.h"
 
 int main() {
