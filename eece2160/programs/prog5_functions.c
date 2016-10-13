@@ -6,6 +6,7 @@
 	Tests ability to write and use functions
  ***********************************************/
 
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <math.h>
 #include "prog5_functions.h"
