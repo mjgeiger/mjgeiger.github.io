@@ -11,10 +11,11 @@
 
 // Print contents of Name struct
 void printName(Name *n) {
-	// FUNCTION CURRENTLY DOES NOTHING
+	printf("%s %c. %s\n", n->first, n->middle, n->last);
 }
 
 // Read information into existing Name
 void readName(Name *n) {
-	// FUNCTION CURRENTLY DOES NOTHING
+	printf("Enter name: ");
+	scanf("%s %c. %s", n->first, &n->middle, n->last);
 }

@@ -1,24 +1,25 @@
 //
-//  StudentInfo.c
+//  SINew_soln.c
 //  PE4_structures
 //
 //  Created by Michael Geiger on 4/8/16.
+//  Revised 11/15/16: Rename StudentInfo type to SINew
 //  Copyright © 2016 Michael Geiger. All rights reserved.
 //
 
-#include "StudentInfo.h"
+#include "SINew.h"
 #include <stdio.h>
 #include <string.h>
 
 // Print information about student
-void printStudent(StudentInfo *s) {
+void printStudent(SINew *s) {
 	printName(&s->sname);
 	printf("ID #%.8u\n", s->ID);
 	printf("GPA: %.2lf\n", s->GPA);
 }
 
 // Reads student information into existing structure
-void readStudent(StudentInfo *s) {
+void readStudent(SINew *s) {
 	readName(&s->sname);
 	printf("Enter ID #: ");
 	scanf("%u", &s->ID);
@@ -27,7 +28,7 @@ void readStudent(StudentInfo *s) {
 }
 
 // Print list of students
-void printList(StudentInfo list[], int n) {
+void printList(SINew list[], int n) {
 	int i;	// Loop index
 	
 	for (i = 0; i < n; i++) {
@@ -38,7 +39,7 @@ void printList(StudentInfo list[], int n) {
 
 // Find student in list, based on last name
 // Returns index if student found, -1 otherwise
-int findByLName(StudentInfo list[], int n, char lname[]) {
+int findByLName(SINew list[], int n, char lname[]) {
 	int i;	// Loop index
 	
 	// Search for student with matching last name in list
@@ -53,7 +54,7 @@ int findByLName(StudentInfo list[], int n, char lname[]) {
 
 // Find student in list, based on ID #
 // Returns index if student found, -1 otherwise
-int findByID(StudentInfo list[], int n, unsigned int sID) {
+int findByID(SINew list[], int n, unsigned int sID) {
 	int i;	// Loop index
 	
 	// Search for student with matching ID in list

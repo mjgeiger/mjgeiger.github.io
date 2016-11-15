@@ -7,11 +7,11 @@
 //
 
 #include <stdio.h>
-#include "StudentInfo.h"
+#include "SINew.h"
 
 int main() {
 	char cmd, cmd2;			// Single character commands
-	StudentInfo stList[10];	// List of students
+	SINew stList[10];	// List of students
 	int nS = 0;				// Number of students in list
 	unsigned int searchID;	// ID to find student by
 	char searchLN[50];		// Last name to find student by
