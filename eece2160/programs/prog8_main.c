@@ -6,6 +6,7 @@
 //  Copyright © 2016 Michael Geiger. All rights reserved.
 //
 
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include "Rectangle.h"      // Includes "Point.h" as well
 
