@@ -10,8 +10,9 @@
 #include <unistd.h>
 
 int main() {
-	printf("Running program test1 in process %d\n", (int)getpid());
-	for (int i = 0; i < 10; i++)
-		printf("T1 i %d, i^2 %d\n", i, i*i);
-	return 0;
+  int i;
+  printf("Running program test1 in process %d\n", (int)getpid());
+  for (i = 0; i < 5; i++)
+    printf("T1: i %d, i^2 %d\n", i, i*i);
+  return 0;
 }
