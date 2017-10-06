@@ -30,7 +30,7 @@ int main() {
 				scanf("%c", &junk);
 			} while (junk != '\n');
 		}
-	} while (n < 0);
+	} while (n < 1);
 	
 	// Seed RNG using current time or user input
 	if (seed == -1)
