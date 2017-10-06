@@ -1,3 +1,13 @@
+//
+//  PE2_loops_skeleton.c
+//  PE2_loops
+//
+//  Created by Michael Geiger on 10/6/17.
+//  Copyright © 2017 Michael Geiger. All rights reserved.
+//
+//  Partial solution to second programming exercise
+
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 void main() {
@@ -10,23 +20,16 @@ void main() {
 
 		/* Read input command and number to be used */
 		do {
-			printf("Enter command and integer: ");
-			nVals = scanf("%c %d", &cmd, &n);
-
-			if (nVals == 2)		// Correctly formatted input
-				break;			/* We haven't spent a lot of time on 
-									break statements in class yet, 
-									but a break statement in a loop
-									exits the loop immediately. In
-									this case, the program exits as
-									soon as it receives valid input. */
-
-			// Otherwise, clear line
-			printf("Incorrectly formatted input\n");
-			do {
-				scanf("%c", &junk);
-			} while (junk != '\n');
-		} while (1);
+			printf("Enter command & n: ");
+			nVals = scanf(" %c %d", &cmd, &n);
+			if (nVals != 2) {
+				printf("Formatting error\n");
+				
+				do {			// Clear line
+					scanf("%c", &junk);
+				} while (junk != '\n');
+			}
+		} while (nVals != 2);
 
 		/* Evaluate cmd and perform appropriate operation */
 		switch (cmd) {
