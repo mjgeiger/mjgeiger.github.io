@@ -28,3 +28,6 @@ LLnode *addSortedNode(LLnode *list, int v);		// Keep list sorted in ascending or
 												//   start of list
 LLnode *findSortedNode(LLnode *list, int v);	// Find node in sorted list and return pointer
 												//   (or NULL if not found)
+
+void freeList(LLnode *list);				// Frees entire list before end of program
+											//   to avoid memory leaks

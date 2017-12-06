@@ -22,6 +22,7 @@ LLnode *addNode(LLnode *list, int v) {
 	newNode = (LLnode *)malloc(sizeof(LLnode));
 	if (newNode == NULL) {
 		fprintf(stderr, "Error: could not allocate new node\n");
+		freeList(list);
 		exit(0);
 	}
 
@@ -139,4 +140,20 @@ LLnode *findSortedNode(LLnode *list, int v) {
 		n = n->next;
 	}
 	return NULL;				// If you get here, data wasn't found
+}
+
+// Frees entire list before end of program to avoid memory leaks
+void freeList(LLnode *list) {
+	LLnode *prev = NULL;	// "Previous" node
+	LLnode *curr = list;	// "Current" node
+	
+	prev = NULL;
+	curr = list;
+	
+	// If current node exists, remove it
+	while (curr != NULL) {
+		prev = curr;
+		curr = curr->next;
+		free(prev);
+	}
 }
