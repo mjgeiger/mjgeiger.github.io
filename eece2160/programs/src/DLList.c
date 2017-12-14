@@ -29,7 +29,7 @@ DLNode *findFWD(DLList *list, double v, int *num) {
 	return NULL;
 }
 
-// Find node containing v, searching from 1st node
+// Find node containing v, searching from last node
 // Return pointer to node, or NULL if nothing found
 // Argument num points to number of iterations
 DLNode *findREV(DLList *list, double v, int *num) {
