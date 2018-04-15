@@ -112,11 +112,11 @@ FCFS Summary (WT = wait time, TT = turnaround time):
 
 PID     WT     TT
  0       0     10
- 1      11     13
- 2      12     18
- 3      17     17
- 4      16     20
-AVG  11.20  15.60
+ 1      10     13
+ 2      11     18
+ 3      16     17
+ 4      15     20
+AVG  10.40  15.60
 
 Process sequence: 0-1-2-3-4
 Context switches: 5
@@ -235,12 +235,12 @@ Ready queue: empty
 SJF Summary (WT = wait time, TT = turnaround time):
 
 PID     WT     TT
- 0      17     26
+ 0      16     26
  1       0      3
- 2       2      8
- 3       7      7
- 4       6     10
-AVG   6.40  10.80
+ 2       1      8
+ 3       6      7
+ 4       5     10
+AVG   5.60  10.80
 
 Process sequence: 1-2-3-4-0
 Context switches: 5
@@ -359,12 +359,12 @@ Ready queue: empty
 STCF Summary (WT = wait time, TT = turnaround time):
 
 PID     WT     TT
- 0      17     26
+ 0      16     26
  1       0      3
- 2       4      9
- 3       1      1
- 4       6     10
-AVG   5.60   9.80
+ 2       2      9
+ 3       0      1
+ 4       5     10
+AVG   4.60   9.80
 
 Process sequence: 1-2-3-2-4-0
 Context switches: 6
@@ -483,12 +483,12 @@ Ready queue: empty
 Round robin Summary (WT = wait time, TT = turnaround time):
 
 PID     WT     TT
- 0      20     26
- 1       9     10
- 2      19     22
- 3       5      5
- 4      15     17
-AVG  13.60  16.00
+ 0      16     26
+ 1       7     10
+ 2      15     22
+ 3       4      5
+ 4      12     17
+AVG  10.80  16.00
 
 Process sequence: 0-1-2-0-3-1-4-2-0-4-2-0-4-2-0
 Context switches: 15
@@ -608,11 +608,11 @@ Priority Summary (WT = wait time, TT = turnaround time):
 
 PID     WT     TT
  0       0     10
- 1      24     26
- 2       9     15
- 3      14     14
- 4      13     17
-AVG  12.00  16.40
+ 1      23     26
+ 2       8     15
+ 3      13     14
+ 4      12     17
+AVG  11.20  16.40
 
 Process sequence: 0-2-3-4-1
 Context switches: 5
@@ -621,11 +621,11 @@ Context switches: 5
 ***** OVERALL SUMMARY *****
 
 Wait Time Comparison
-1 STCF           5.60
-2 SJF            6.40
-3 FCFS          11.20
-4 Priority      12.00
-5 Round robin   13.60
+1 STCF           4.60
+2 SJF            5.60
+3 FCFS          10.40
+4 Round robin   10.80
+5 Priority      11.20
 
 Turnaround Time Comparison
 1 STCF           9.80
