@@ -1,5 +1,5 @@
 /*************************************************
- 16.216: ECE Application Programming
+ EECE.2160: ECE Application Programming
  UMass Lowell
  M. Geiger
  Starter file for instruction decoding assignment
@@ -8,7 +8,7 @@
  ***************************************************/
 
 #include <stdio.h>
-#include "prog9_functions.h"
+#include "prog10_functions.h"
 // MAY NEED ADDITIONAL LIBRARIES
 
 void main() {
@@ -21,11 +21,11 @@ void main() {
     unsigned int src2;			// Register number for second source operand
     unsigned int shamt;			// Shift amount
     
-    /****** 16.216 PROGRAM 9 ******
+    /****** EECE.2160 PROGRAM 10 ******
      ADD ADDITIONAL VARIABLES HERE
      *******************************/
     
-    /****** 16.216 PROGRAM 9 ******
+    /****** EECE.2160 PROGRAM 10 ******
      PROMPT FOR NAME OF BINARY
      INPUT FILE, OPEN FILE, AND
      READ INITIAL REGISTER VALUES
@@ -33,27 +33,27 @@ void main() {
      TO "openFile()" FROM PE4
      *******************************/
     
-    /****** 16.216 PROGRAM 9 ******
+    /****** EECE.2160 PROGRAM 10 ******
      PROMPT FOR NAME OF PROGRAM
      FILE AND OPEN
      *******************************/
     
-    /****** 16.216 PROGRAM 9 ******
+    /****** EECE.2160 PROGRAM 10 ******
      PROMPT FOR NAME OF OUTPUT
      FILE AND OPEN
      *******************************/
     
-    /****** 16.216 PROGRAM 9 ******
+    /****** EECE.2160 PROGRAM 10 ******
      REPEATEDLY READ INSTRUCTION,
      DECODE IT, AND PERFORM OPERATION
      *******************************/
     // ENTER CODE TO START LOOP HERE
     
-    /****** 16.216 PROGRAM 9 ******
+    /****** EECE.2160 PROGRAM 10 ******
 		   DECODE INSTRUCTION AFTER READING
      *******************************/
     
-    /****** 16.216 PROGRAM 9 ******
+    /****** EECE.2160 PROGRAM 10 ******
 		   PERFORM APPROPRIATE OPERATION
 		   AND STORE RESULT
 		   HINT: TO MAKE OUTPUT CORRECT,
@@ -63,7 +63,7 @@ void main() {
 		   TEMPORARY VARIABLE
      *******************************/
     
-    /****** 16.216 PROGRAM 9 ******
+    /****** EECE.2160 PROGRAM 10 ******
      PRINT OUTPUT TO FILE
      (AND STORE RESULT,
      IF NECESSARY)
@@ -71,7 +71,7 @@ void main() {
     
     // END OF LOOP
     
-    /****** 16.216 PROGRAM 9 ******
+    /****** EECE.2160 PROGRAM 10 ******
      CLOSE ANY OPEN FILES
      *******************************/
     

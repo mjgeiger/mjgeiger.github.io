@@ -1,5 +1,5 @@
 /*************************************************
- 16.216: ECE Application Programming
+ EECE.2160: ECE Application Programming
  UMass Lowell
  M. Geiger
  Starter file for instruction decoding assignment
@@ -7,9 +7,9 @@
  Function definitions
  ***************************************************/
 
-#include "prog9_functions.h"
+#include "prog10_functions.h"
 // MAY REQUIRE ADDITIONAL LIBRARIES
 
-/****** 16.216 PROGRAM 9 ******
+/****** EECE.2160 PROGRAM 10 ******
  INSERT DEFINITIONS FOR ANY USER-DEFINED FUNCTIONS
  *******************************/
