@@ -7,12 +7,9 @@
  */
 
 #include "Stack.h"
-
-/* Data members:
-	double *list;	// The actual data stored on the stack
-	int tos;		// Index for top of stack
-	unsigned cap;	// Capacity (max size) of stack
-*/
+#include <iostream>
+using std::cout;
+using std::endl;
 
 // Constructor
 Stack::Stack(unsigned maxSize = 1024) : 
@@ -26,7 +23,43 @@ Stack::~Stack() {
 	delete[] list;
 }
 
-bool empty() const;					// Returns true if stack empty
-void push(const double &val);		// Push val to top of stack
-void pop();							// Remove top of stack
-double top();						// Read c
+// Returns true if stack empty
+bool Stack::empty() const {
+	// Could write as:
+	//    return (tos == -1);
+	
+	if (tos == -1) 
+		return true;
+	else 
+		return false;
+}
+
+// Push val to top of stack
+void Stack::push(const double &val) {
+	if (tos == cap - 1)
+		cout << "Stack is full" << endl;
+	else {
+		tos++;
+		list[tos] = val;
+
+		// Could have written: list[++tos] = val;
+	}
+}
+
+// Remove top of stack
+void Stack::pop() {
+	if (empty())
+		cout << "Stack is empty" << endl;
+	else
+		tos--;
+}
+
+// Read top of stack
+double Stack::top() {
+	if (empty()) {
+		cout << "Stack is empty" << endl;
+		return list[cap - 1];		// Have to return something ...
+	}
+	else
+		return list[tos];
+}
