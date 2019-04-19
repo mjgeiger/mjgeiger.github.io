@@ -21,9 +21,34 @@ using std::cout;
 Queue::Queue() : front(NULL), back(NULL)
 {}
 
-// Destructor
+// Destructor--traverse queue and delete all nodes
 Queue::~Queue() {
-	// Delete ***all*** the nodes
+	while (!empty())
+		dequeue();
+
+	/* Inefficient version that shows details of traversal
+	Node *prev, *cur;	// prev = address of node to delete
+						// cur = node after prev
+
+	// Only need to delete from non-empty queue
+	if (!empty()) {
+		prev = NULL;
+		cur = front;
+
+		// Traverse all nodes and delete them
+		while (cur != NULL) {
+
+			// 1. Make both pointers refer to same node
+			prev = cur;
+
+			// 2. Move cur ahead one node (before you delete that node)
+			cur = cur->next;
+
+			// 3. Delete prev node
+			delete prev;
+		}
+	}
+	*/
 }
 
 // Returns true if queue empty
@@ -56,10 +81,15 @@ void Queue::enqueue(const QueueElement &val) {
 void Queue::dequeue() {
 	if (!empty()) {
 		// ptr = address of front node
+		Node *ptr = front;
 
 		// "front" ptr = address of second node
+		front = ptr->next;
+		if (front == NULL)		// Removing last node
+			back = NULL;
 
 		// delete old front node (ptr = address of that node)
+		delete ptr;
 	}
 
 	else
@@ -72,7 +102,9 @@ QueueElement Queue::getFront() {
 		return front->data;
 	else {
 		cout << "ERROR: Queue empty\n";
-		Node temp;
-		return temp.data;
+		// Don't really need full node ... 
+		// Node temp;
+		QueueElement tempData;
+		return tempData;
 	}
 }
