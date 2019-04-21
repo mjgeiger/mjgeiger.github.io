@@ -13,7 +13,9 @@ using std::cin;
 
 int main() {
 	unsigned seed;		// Random seed value
-	Deck table;			// 
+	Deck table;			// Represents cards on table, either
+						//  at beginning of game or in the middle
+						//  of each turn (before winner chosen)
 	/*** ADD OTHER VARIABLE DECLARATIONS--PLAYER DECKS, ETC ***/
 	
 	// Prompt for and use random seed--no need to change these lines
