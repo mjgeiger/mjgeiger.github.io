@@ -66,7 +66,27 @@ void Stack::print(ostream &out) {
 
 // Overloaded assignment--performs deep copy
 Stack &Stack::operator =(const Stack &rhs) {
-	/*** TO BE COMPLETED MONDAY 10/21 ***/
+	Stack temp;
+	Node *p;
+	
+	if (!(*this == rhs)) {
+		// 0. If there's data in the calling object, empty it
+		while (!empty())
+			pop();
+
+		// 1. Copy data from rhs to temp, in reverse order
+		p = rhs.top;
+		while (p != NULL) {
+			temp.push(p->getVal());
+			p = p->getNext();
+		}
+
+		// 2. Empty temp stack and copy data to calling object
+		while (!temp.empty()) {
+			this->push(temp.getTop());
+			temp.pop();
+		}
+	}
 	return *this;
 }
 
@@ -82,7 +102,7 @@ bool Stack::operator ==(const Stack &rhs) {
 	//  (2) Data in all nodes so far match (if statement will exit if false)
 	while (tmp1 != NULL && tmp2 != NULL) {
 
-		// If mismatch found, exit loop
+		// If mismatch found, exit function
 		if (tmp1->getVal() != tmp2->getVal())
 			return false;
 
@@ -103,9 +123,19 @@ bool Stack::operator ==(const Stack &rhs) {
 		return false;
 }
 
-// Overloaded output (non-friend function)
+// Overloaded output (friend function)
 ostream &operator <<(ostream &out, Stack &aStack) {
-	/*** TO BE COMPLETED MONDAY 10/21 ***/
+	Node *temp = aStack.top;
+	while (temp != NULL) {
+		cout << temp->getVal() << '\n';
+		temp = temp->getNext();
+	}
 	return out;
 }
 
+// Overloaded output (non-friend function)
+/*ostream &operator <<(ostream &out, Stack &aStack) {
+	aStack.print(out);
+	return out;
+}
+*/
